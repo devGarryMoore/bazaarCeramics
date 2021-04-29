@@ -1,0 +1,17 @@
+/* CSS Document */
+footer {
+	text-align: center;
+  background-color:#e08f62;
+}
+footer a{
+  text-decoration: none;
+  color: #ffefd5;
+}
+footer a:hover{
+  color: #2fc7de;
+  text-shadow: 0 0 15px #2fc7de;
+}
+#copyright {
+  color: #ffefd5;
+}
+

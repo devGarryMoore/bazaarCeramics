@@ -1,0 +1,79 @@
+@media only screen and (min-width: 501px) and (max-width: 800px)  {
+  #companyName {
+    display: none;
+  }
+  #sidebarLogo {
+    height: 55px;
+    width: 70px;
+  }
+  #headerLogo {
+    height: 55px;
+    width: 70px;
+  }
+  #logInSignUp{
+    grid-column: 3 / span 4;
+  }
+  #logIn{
+    font-size: 14px;
+    padding: 4px;
+  }
+  #signUp{
+    font-size: 14px;
+    padding: 4px;
+  }
+  #welcomeLogOut {
+    grid-column: 3 / span 4;
+  }
+  #welcome {
+    font-size: 14px;
+    padding: 2px;
+    margin-left: 4px;
+  }
+  #logOut{
+    font-size: 14px;
+    padding: 2px;
+    display: block;
+    margin-top: 5px;
+  }
+  #searchBar{
+    grid-column: 7 / span 2;
+  }
+  #myInput {
+    width: 40vw;
+    font-size: 15px;
+  }
+  .searchBox{
+    height: 35px;
+  }
+  #companyBanner {
+    margin-left: 7px;
+    width: 98%;
+    height: 140px;
+  }
+  #companyBannerBG {
+    height: 140px;
+  }
+  #contentWrapper {
+    width: 90%;
+  }
+  #pageHeader {
+    font-size: 22px;
+  }
+  .h3headings {
+    font-size: 18px;
+  }
+  .ppara {
+    font-size: 15px;
+  }
+  .contentImage {
+    height: 130px;
+    width: 40%;
+  }
+  #contentPart2 {
+    display: block;
+  }
+  .contentImage2 {
+    width: 40%;
+    height: 155px;
+  }
+}

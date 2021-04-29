@@ -1,0 +1,42 @@
+.sidenav {
+  background: #9dab86;
+  transition: 0.5s;
+}
+a.sidebarCurrent {
+  font-weight: 700;
+}
+.sidenav a {
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.3s;
+  color: #141414;
+}
+.sidenav a:hover {
+  color: #cc3d0b;
+  text-shadow: 0 0 15px #cc3d0b;
+}
+.active {
+  background-color: #cdb2a3;
+}
+.sidebarHome {
+  margin-top: 55px;
+}
+.dropdown-container {
+  display: none;
+  background-color: #cfc5ad;
+}
+.dropdown-container a {
+  font-size: 20px;
+}
+.sidenav .closebtn {
+  font-size: 50px;
+  cursor: pointer;
+}
+.sidenav .closebtn:hover {
+  color: #cc3d0b;
+  text-shadow: 0 0 15px #cc3d0b;  
+}
+.downArrow:hover {
+  color: #cc3d0b;
+  text-shadow: 0 0 15px #cc3d0b;  
+}

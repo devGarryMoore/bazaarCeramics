@@ -1,0 +1,314 @@
+noscript{
+  text-align: center;
+  font-weight: 700;
+}
+#container {
+  height: 333px;
+  width: 100%;
+  box-sizing: border-box;
+}
+#toggleContainer {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#Information { 
+  margin-left: 9px;
+}
+
+#toggle {
+  height: 10vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+#outer {
+  width: 96px;
+  height: 36px;
+  background-color: white;
+  border-radius: 3px;
+  border: 2px solid white;
+  transition: all 0.5s;
+}
+#outer.outerActive {
+  background-color: white;
+  border: 2px solid white;
+  transition: all 0.5s;
+}
+
+#slider5 {
+  height: 36px;
+  width: 46px;
+  background-color: #e08f62;
+  border-radius: 3px;  
+  transition: all 0.5s;
+}
+#slider5.active {
+  -webkit-transform: translatex(50px);
+  -ms-transform: translatex(50px);
+  -o-transform: translatex(50px);
+  transform: translatex(50px);
+  transition: all 0.5s;
+  background-color: #e08f62;
+}
+
+#galleryView {
+  height: max-content;
+  width: 100%;
+  background: #d7c79e;
+  display: flex;
+  justify-content: center;
+  -moz-perspective: 780px;
+  -webkit-perspective: 780px;
+  perspective: 780px;
+  overflow: hidden;
+}
+#galleryContainer { 
+  height: 600px;
+  width: 100%;
+  background: transparent;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.leftView3 {
+  height: 200px;
+  width: 200px;
+  opacity: 0.25;
+  background-color: #eb9100;
+  background: url("../images/sequence13.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: -15%;
+  transition: all 0.5s;
+  -moz-transform: translate(-50%,0) rotateY(45deg);
+  -webkit-transform: translate(-50%,0) rotateY(45deg);
+  transform: translate(-50%,0) rotateY(45deg);
+  transform-origin: left;  
+}
+.leftView3:hover {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.leftView2 {
+  height: 200px;
+  width: 200px;
+  opacity: 0.25;
+  background-color: #eb9100;
+  background: url("../images/finishing.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  transition: all 0.5s;
+  -moz-transform: translate(-50%,0) rotateY(45deg);
+  -webkit-transform: translate(-50%,0) rotateY(45deg);
+  transform: translate(-50%,0) rotateY(45deg);
+  transform-origin: left;
+}
+.leftView2:hover {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.leftView {
+  height: 200px;
+  width: 200px;
+  opacity: 0.5;
+  background-color: #eb9100;
+  background: url("../images/finishing2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 32%;
+  transition: all 0.5s; 
+  -moz-transform: translate(-50%,0) rotateY(45deg);
+  -webkit-transform: translate(-50%,0) rotateY(45deg);
+  transform: translate(-50%,0) rotateY(45deg); 
+  transform-origin: left;
+}
+.leftView:hover {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.mainView {
+  height: 50%;
+  width: 16vw;  
+  background-color: #eb9100;
+  background: url("../images/openingclay.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transition: all 0.5s;
+  transform: translate(-50%,0);
+  z-index: 1;  
+}
+.mainView:hover {
+  transform: translate(-50%,0) scale(1.2);
+  transition: all 1s;   
+}
+
+.mainViewEnlarged{
+  height: 100%;
+  width: 32vw;
+  background: url("../images/openingclay.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transition: all 0.5s;
+  transform: translate(-50%,0);
+}
+
+.rightView {
+  height: 200px;
+  width: 200px;
+  opacity: 0.5;
+  background-color: #eb9100;
+  background: url("../images/sequence1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 68%;
+  transition: all 0.5s;
+  -moz-transform: translate(-50%,0) rotateY(-45deg);
+  -webkit-transform: translate(-50%,0) rotateY(-45deg);
+  transform: translate(-50%,0) rotateY(-45deg);
+  transform-origin: right;
+}
+.rightView:hover {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.rightView2 {
+  height: 200px;
+  width: 200px;
+  opacity: 0.25;
+  background-color: #eb9100;
+  background: url("../images/sequence2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 90%;
+  transition: all 0.5s;
+  -moz-transform: translate(-50%,0) rotateY(-45deg);
+  -webkit-transform: translate(-50%,0) rotateY(-45deg);
+  transform: translate(-50%,0) rotateY(-45deg);
+  transform-origin: right;
+}
+.rightView2:hover {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.rightView3 {
+  height: 200px;
+  width: 200px;
+  opacity: 0.25;
+  background-color: #eb9100;
+  background: url("../images/sequence3.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 115%;
+  transition: all 0.5s;
+  -moz-transform: translate(-50%,0) rotateY(-45deg);
+  -webkit-transform: translate(-50%,0) rotateY(-45deg);
+  transform: translate(-50%,0) rotateY(-45deg);
+  transform-origin: right;
+}
+.rightView3:hover {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.navBtns {
+  width: 80px;
+  height: 80px;
+  font-size: 50px;
+  font-weight: 900;
+  text-shadow: 2px 2px #000000;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  opacity: 0.8;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  z-index: 1;
+}
+
+.navBtns:hover {
+  opacity: 1;
+  transition: all 1s;
+  background-color: #e08f62;
+}
+
+#navLeft {
+  left: 50px;
+}
+
+#navRight {
+  right: 50px;
+}
+
+#linkTag { 
+  cursor: pointer;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+#infoView {
+  min-height: 500px;
+  width: 100%;
+  background: #d7c79e;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#infoContainer {
+  min-height: 500px;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-content: center;
+}
+
+#productionHeading {
+  margin-left: 20px;
+  margin-right: 80px;
+}
+
+.productionPara {
+  margin: auto;
+  padding-top: 20px;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 20px;
+}

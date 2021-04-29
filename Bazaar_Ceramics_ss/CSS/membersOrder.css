@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+}
+#Header {
+  background-color: hsl(240, 100%, 4%);
+  color: aliceblue;
+  text-align: center;
+  width: 1024px;
+}
+#Header h1 {
+  margin: auto;
+}
+#Content {
+  background-color: hsl(0, 71%, 35%);
+  width: 1024px;
+}
+#imageCRB {
+  background-color: saddlebrown;
+  margin: auto;
+  width: 600px;
+}
+#Form {
+  background-color: hsl(0, 40%, 94%);
+}
+div h2 {
+  text-align: center;
+  margin: auto;
+}
+#Form_Content {
+  text-align: center;
+  width: 1024px;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.errors {
+  grid-column: 3 / 5;
+  justify-self: center;
+  color: #ff0000;
+  margin: 0;
+}
+label {
+  grid-column: 2 / 3;
+  justify-self: end;
+}
+input {
+  grid-column: 3 / 5;
+}
+textarea {
+  grid-column: 3 / 5;
+  width: auto;
+  height: 46px;
+  resize: none;
+}
+#CRBPrice {
+  -moz-appearance: textfield;
+}
+#CRBTotalPrice {
+  -moz-appearance: textfield;
+}
+#calculateTotal {
+  grid-column: 3 / 5;
+  cursor: pointer;
+}
+#Clear {
+  grid-column: 3 / 4;
+  cursor: pointer;
+}
+#Submit {
+  grid-column: 4 / 5;
+  cursor: pointer;
+}
+#Footer {
+	background-color: hsla(0, 0%, 13%, 0.272);
+	height: 23px;
+	text-align: center;
+	width: 1024px;
+}
+#Footer a {
+  font-size: large;
+  font-weight: 700;
+	text-decoration: none;
+	color: hsl(249, 100%, 5%);
+}
+#Footer a:hover {
+  color: hsl(0, 83%, 41%);
+}
